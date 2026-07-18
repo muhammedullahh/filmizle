@@ -17,84 +17,84 @@ export const channel_config = [
     channelID: "azertv",
     channelName: "AZTV",
     channelSource: "https://str.yodacdn.net/azertv/index.m3u8",   // ✅ 200
-    channelIconC: "/logos/aztv.png",
+    channelIconC: "logos/aztv.png",
     country: "az", category: "general",
   },
   {
     channelID: "xazartv",
     channelName: "XƏZƏR TV",
     channelSource: "https://str.yodacdn.net/xazartv/video.m3u8",
-    channelIconC: "/logos/xezertv.png",
+    channelIconC: "logos/xezertv.png",
     country: "az", category: "general",
   },
   {
     channelID: "ictimaitele",
     channelName: "İctimai TV",
     channelSource: "https://live.itv.az/itv.m3u8",               // ✅ 200
-    channelIconC: "/logos/ictimai.png",
+    channelIconC: "logos/ictimai.png",
     country: "az", category: "general",
   },
   {
     channelID: "arb",
     channelName: "ARB TV",
     channelSource: "https://str.yodacdn.net/arb/video.m3u8",
-    channelIconC: "/logos/arbtv.jfif",
+    channelIconC: "logos/arbtv.jfif",
     country: "az", category: "general",
   },
   {
     channelID: "atv_az",
     channelName: "ATV",
     channelSource: "https://str.yodacdn.net/atv/video.m3u8",     // ✅ 200
-    channelIconC: "/logos/atv.png",
+    channelIconC: "logos/atv.png",
     country: "az", category: "general",
   },
   {
     channelID: "cbc",
     channelName: "CBC TV",
     channelSource: "https://str.yodacdn.net/cbc/video.m3u8",
-    channelIconC: "/logos/cbctv.png",
+    channelIconC: "logos/cbctv.png",
     country: "az", category: "general",
   },
   {
     channelID: "space",
     channelName: "Space TV",
     channelSource: "https://str.yodacdn.net/space/video.m3u8",
-    channelIconC: "/logos/space.png",
+    channelIconC: "logos/space.png",
     country: "az", category: "general",
   },
   {
     channelID: "real",
     channelName: "Real TV",
     channelSource: "https://str.yodacdn.net/real/video.m3u8",
-    channelIconC: "/logos/realtv.jfif",
+    channelIconC: "logos/realtv.jfif",
     country: "az", category: "general",
   },
   {
     channelID: "qafkaz",
     channelName: "Qafqaz TV",
     channelSource: "https://str.yodacdn.net/qafkaz/video.m3u8",  // ✅ 200
-    channelIconC: "/logos/qafqaztv.png",
+    channelIconC: "logos/qafqaztv.png",
     country: "az", category: "general",
   },
   {
     channelID: "start",
     channelName: "Kanal S",
     channelSource: "https://str.yodacdn.net/start/video.m3u8",
-    channelIconC: "/logos/kanals.png",
+    channelIconC: "logos/kanals.png",
     country: "az", category: "general",
   },
   {
     channelID: "vip",
     channelName: "VIP HD",
     channelSource: "https://str.yodacdn.net/vip/video.m3u8",
-    channelIconC: "/logos/viptv.jfif",
+    channelIconC: "logos/viptv.jfif",
     country: "az", category: "general",
   },
   {
     channelID: "tmb",
     channelName: "Vostok TV",
     channelSource: "https://str.yodacdn.net/tmb/video.m3u8",     // ✅ 200
-    channelIconC: "/logos/vostoktv.jfif",
+    channelIconC: "logos/vostoktv.jfif",
     country: "az", category: "general",
   },
   {
@@ -123,14 +123,14 @@ export const channel_config = [
     channelID: "eltv",
     channelName: "ELTV",
     channelSource: "http://85.132.53.162:1935/live/eltv/playlist.m3u8", // ✅ 200
-    channelIconC: "/logos/eltv.png",
+    channelIconC: "logos/eltv.png",
     country: "az", category: "general",
   },
   {
     channelID: "kanal35",
     channelName: "Kanal 35",
     channelSource: "https://str2.yodacdn.net/kanal35/index.m3u8", // ✅ 200
-    channelIconC: "/logos/kanal35.jfif",
+    channelIconC: "logos/kanal35.jfif",
     country: "az", category: "general",
   },
 
@@ -139,14 +139,14 @@ export const channel_config = [
     channelID: "bakutv",
     channelName: "Baku TV",
     channelSource: "https://str.yodacdn.net/bakutv/video.m3u8",
-    channelIconC: "/logos/bakutv.png",
+    channelIconC: "logos/bakutv.png",
     country: "az", category: "news",
   },
   {
     channelID: "arb24",
     channelName: "ARB 24",
     channelSource: "https://str.yodacdn.net/arb24/video.m3u8",
-    channelIconC: "/logos/arb24.png",
+    channelIconC: "logos/arb24.png",
     country: "az", category: "news",
   },
   {
@@ -160,7 +160,7 @@ export const channel_config = [
     channelID: "haberglobal",
     channelName: "Haber Global",
     channelSource: "https://str.yodacdn.net/haberglobal/video.m3u8", // ✅ 200
-    channelIconC: "/logos/haberglobal.png",
+    channelIconC: "logos/haberglobal.png",
     country: "az", category: "news",
   },
 
@@ -169,7 +169,7 @@ export const channel_config = [
     channelID: "idmantele",
     channelName: "İdman TV",
     channelSource: "https://str.yodacdn.net/idmantele/video.m3u8", // ✅ 200
-    channelIconC: "/logos/idmantv.jfif",
+    channelIconC: "logos/idmantv.jfif",
     country: "az", category: "sport",
   },
 
@@ -178,7 +178,7 @@ export const channel_config = [
     channelID: "mtvaz",
     channelName: "MTV Azerbaijan",
     channelSource: "https://str.yodacdn.net/mtvaz/video.m3u8",
-    channelIconC: "/logos/mtv.png",
+    channelIconC: "logos/mtv.png",
     country: "az", category: "music",
   },
   {
@@ -194,7 +194,7 @@ export const channel_config = [
     channelID: "arbgunesh",
     channelName: "ARB GÜNƏŞ",
     channelSource: "https://str.yodacdn.net/arbgunesh/video.m3u8",
-    channelIconC: "/logos/arbgunes.png",
+    channelIconC: "logos/arbgunes.png",
     country: "az", category: "kids",
   },
 
@@ -210,7 +210,7 @@ export const channel_config = [
     channelID: "ntv",
     channelName: "Naxçıvan TV",
     channelSource: "https://str2.yodacdn.net/ntv/video.m3u8",   // ✅ 200
-    channelIconC: "/logos/naxcivantv.jfif",
+    channelIconC: "logos/naxcivantv.jfif",
     country: "az", category: "general",
   },
 
@@ -219,7 +219,7 @@ export const channel_config = [
     channelID: "tmbtr",
     channelName: "TMB TV",
     channelSource: "https://str.yodacdn.net/tmbtr/video.m3u8",
-    channelIconC: "/logos/tmbtv.jfif",
+    channelIconC: "logos/tmbtv.jfif",
     country: "az", category: "general",
   },
   {
@@ -233,7 +233,7 @@ export const channel_config = [
     channelID: "biznestv",
     channelName: "Biznes TV",
     channelSource: "https://str.yodacdn.net/biznestv/video.m3u8", // ✅ 200
-    channelIconC: "/logos/biznestv.png",
+    channelIconC: "logos/biznestv.png",
     country: "az", category: "news",
   },
 
