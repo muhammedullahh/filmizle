@@ -782,9 +782,9 @@ document.addEventListener('keydown', e => {
 // ═══════════════════════════════════════
 // SHORTCUTS MODAL
 // ═══════════════════════════════════════
-btnShortcuts.addEventListener('click', () => shortcutsModal.classList.toggle('hidden'));
-closeShortcuts.addEventListener('click', () => shortcutsModal.classList.add('hidden'));
-shortcutsBd.addEventListener('click', () => shortcutsModal.classList.add('hidden'));
+if (btnShortcuts) btnShortcuts.addEventListener('click', () => shortcutsModal.classList.toggle('hidden'));
+if (closeShortcuts) closeShortcuts.addEventListener('click', () => shortcutsModal.classList.add('hidden'));
+if (shortcutsBd) shortcutsBd.addEventListener('click', () => shortcutsModal.classList.add('hidden'));
 
 // ═══════════════════════════════════════
 // SCROLL: header shadow + scroll-to-top
@@ -813,13 +813,7 @@ scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior:
   grid.appendChild(frag);
 })();
 
-// Then render real channels on next tick
 requestAnimationFrame(() => {
   refresh();
   updateVolFill();
-  console.info(
-    `%cAzStream %c${channels.length} kanal yükləndi ✓`,
-    'color:#e63946;font-weight:900;font-size:1rem',
-    'color:#22c55e;font-size:.9rem'
-  );
 });
