@@ -378,6 +378,56 @@ searchClear.addEventListener('click', () => {
 });
 
 // ═══════════════════════════════════════
+// MOBILE SEARCH
+// ═══════════════════════════════════════
+const btnMobileSearch    = document.getElementById('btnMobileSearch');
+const mobileSearchOverlay = document.getElementById('mobileSearchOverlay');
+const mobileSearchInput  = document.getElementById('mobileSearchInput');
+const mobileClearBtn     = document.getElementById('mobileClearBtn');
+
+if (btnMobileSearch) {
+  btnMobileSearch.addEventListener('click', () => {
+    const isOpen = mobileSearchOverlay.classList.toggle('visible');
+    if (isOpen) {
+      setTimeout(() => mobileSearchInput.focus(), 80);
+    } else {
+      mobileSearchInput.value = '';
+      searchQuery = '';
+      refresh();
+    }
+  });
+}
+
+if (mobileSearchInput) {
+  mobileSearchInput.addEventListener('input', () => {
+    clearTimeout(searchDebounce);
+    searchQuery = mobileSearchInput.value.trim().toLowerCase();
+    mobileClearBtn.style.display = searchQuery ? '' : 'none';
+    searchDebounce = setTimeout(refresh, 180);
+  });
+}
+
+if (mobileClearBtn) {
+  mobileClearBtn.style.display = 'none';
+  mobileClearBtn.addEventListener('click', () => {
+    mobileSearchInput.value = '';
+    searchQuery = '';
+    mobileClearBtn.style.display = 'none';
+    refresh();
+    mobileSearchInput.focus();
+  });
+}
+
+// Close mobile search on outside tap
+document.addEventListener('click', (e) => {
+  if (mobileSearchOverlay && mobileSearchOverlay.classList.contains('visible')) {
+    if (!mobileSearchOverlay.contains(e.target) && e.target !== btnMobileSearch) {
+      mobileSearchOverlay.classList.remove('visible');
+    }
+  }
+});
+
+// ═══════════════════════════════════════
 // OPEN PLAYER
 // ═══════════════════════════════════════
 function openPlayer(ch) {

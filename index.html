@@ -2,7 +2,7 @@
 <html lang="az">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>AzStream — Canlı TV</title>
   <meta name="description" content="90+ Azərbaycan və Türkiyə TV kanalını HD keyfiyyətdə, reklamsız, pulsuz izləyin." />
   <meta name="theme-color" content="#070a11" />
@@ -69,9 +69,25 @@
           <span class="live-dot"></span>
           <span id="liveCount">0</span> canlı
         </div>
+        <button class="icon-btn mobile-search-btn" id="btnMobileSearch" title="Axtar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
       </div>
     </div>
   </header>
+
+  <!-- ═══ MOBILE SEARCH OVERLAY ═══ -->
+  <div class="mobile-search-overlay" id="mobileSearchOverlay">
+    <div class="search-bar" id="mobileSearchBar">
+      <svg class="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input type="text" id="mobileSearchInput" placeholder="Kanal axtar..." autocomplete="off" spellcheck="false" />
+      <button class="search-clear" id="mobileClearBtn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
 
   <!-- ═══ HERO ═══ -->
   <section class="hero" id="hero">
